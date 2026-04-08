@@ -1,0 +1,32 @@
+{
+  "name": "design-style",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "58 design systems for pixel-perfect UI generation",
+  "main": "index.js",
+  "bin": {
+    "design-style": "./bin/cli.js"
+  },
+  "scripts": {
+    "preview": "node bin/cli.js preview",
+    "validate": "node bin/cli.js validate",
+    "package": "node bin/cli.js package",
+    "publish": "node bin/cli.js publish"
+  },
+  "keywords": [
+    "design",
+    "design-systems",
+    "ui",
+    "tokens",
+    "color-palette",
+    "typography",
+    "claude-code",
+    "skill"
+  ],
+  "author": "Design Style Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jedanny/design-style"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "design-style",
+  "displayName": "Design Style Matcher",
+  "description": "58 design systems for pixel-perfect UI generation. Match any website's design style with structured tokens, color palettes, and component patterns.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Design Style Team"
+  },
+  "homepage": "https://github.com/Jedanny/design-style",
+  "repository": "https://github.com/Jedanny/design-style",
+  "license": "MIT",
+  "keywords": ["design", "design-systems", "ui", "tokens", "color-palette", "typography"],
+  "skills": "./skills/",
+  "hooks": "./hooks/hooks-cursor.json"
+}
