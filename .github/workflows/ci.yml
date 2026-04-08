@@ -31,7 +31,7 @@ jobs:
           python-version: '3.11'
 
       - name: Package skill
-        run: python3 scripts/package_skill.py . dist
+        run: python3 scripts/package_skill.py skills/design-style dist
 
       - uses: actions/upload-artifact@v4
         with:
