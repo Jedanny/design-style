@@ -9,6 +9,9 @@ Usage:
 import sys
 import zipfile
 from pathlib import Path
+
+# Add scripts directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent))
 from quick_validate import validate_skill
 
 
