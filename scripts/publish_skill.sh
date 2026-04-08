@@ -12,9 +12,11 @@ VERSION=${1:-$(date +%Y.%m.%d)}
 
 echo "📦 Publishing: $SKILL_NAME v$VERSION"
 
+SKILL_PATH="skills/design-style"
+
 # Validate
 echo "🔍 Validating skill..."
-python3 scripts/quick_validate.py .
+python3 scripts/quick_validate.py "$SKILL_PATH"
 if [ $? -ne 0 ]; then
     echo "❌ Validation failed"
     exit 1
@@ -22,7 +24,7 @@ fi
 
 # Package
 echo "📦 Packaging skill..."
-python3 scripts/package_skill.py . ./dist
+python3 scripts/package_skill.py "$SKILL_PATH" ./dist
 if [ $? -ne 0 ]; then
     echo "❌ Packaging failed"
     exit 1

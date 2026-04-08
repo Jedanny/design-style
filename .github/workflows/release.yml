@@ -18,8 +18,8 @@ jobs:
 
       - name: Validate and package
         run: |
-          python3 scripts/quick_validate.py .
-          python3 scripts/package_skill.py . dist
+          python3 scripts/quick_validate.py skills/design-style
+          python3 scripts/package_skill.py skills/design-style dist
 
       - name: Create Release
         uses: softprops/action-gh-release@v1
